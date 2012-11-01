@@ -1,0 +1,161 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+a {outline: none;} /* firefox borders */
+a img {border: none;} /* ie img borders */
+
+/* rns camelia */
+@font-face
+{
+    font-family: 'rnscamelia';
+    src: url('skin/camelia.ttf') format('truetype');
+}
+
+html, body {
+	background-color: #e2e2e2;
+	text-shadow: 0px 1px 1px #ffffff;
+}
+
+/* triangles */
+.tri {
+	border-color: transparent transparent transparent #d3d3d3;
+	border-style: solid;
+	border-width: 30px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	margin-top: -18px;
+}
+
+.btri {
+	border-color: transparent transparent transparent #49a2aa;
+	border-style: solid;
+	border-width: 30px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	margin-top: -18px;
+}
+
+.emp {
+	border-color: transparent transparent transparent transparent;
+	border-style: solid;
+	border-width: 30px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	margin-top: -18px;
+}
+
+#container {
+	padding-left: 100px;
+	padding-top: 100px;
+	width: 600px;
+}
+
+#header {
+	clear: both;
+	font-family: 'rnscamelia', trebuchet ms;
+	font-size: 30px;
+	color: #49a2aa;
+	text-align: center;
+	width: 600px;
+	padding: 20px 0px;
+}
+
+#header a, a:hover, a:active {
+	font-size: 20px;
+	font-family: 'rnscamelia', trebuchet ms;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+
+.disappear, .reappear {
+	padding: 10px;
+	margin: 10px;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.disappear:hover, .reappear:hover {
+	background-color: #f3e56f;
+}
+
+/* rows */
+#row1, #row2, #row3, #row4, #row5, #row6, #row7, #row8, #row9, #row10, #row11, #row12, #row13, #row14, #row15, #row16, #row17, #row18, #row19, #row20 {
+	position: relative;
+	width: 20px;
+	clear: right;
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	opacity: 1;
+}
+#row1 {
+	left: 100px;
+}
+#row2 {
+	left: 120px;
+}
+#row3 {
+	left: 140px;
+}
+#row4 {
+	left: 160px;
+}
+#row5 {
+	left: 180px;
+}
+#row6 {
+	left: 200px;
+}
+#row7 {
+	left: 220px;
+}
+#row8 {
+	left: 240px;
+}
+#row9 {
+	left: 260px;
+}
+#row10 {
+	left: 280px;
+}
+#row11 {
+	left: 300px;
+}
+#row12 {
+	left: 320px;
+}
+#row13 {
+	left: 340px;
+}
+#row14 {
+	left: 360px;
+}
+#row15 {
+	left: 380px;
+}
+#row16 {
+	left: 400px;
+}
+#row17 {
+	left: 420px;
+}
+#row18 {
+	left: 440px;
+}
+#row19 {
+	left: 460px;
+}
+#row20 {
+	left: 480px;
+}
