@@ -8,11 +8,12 @@ function Triangles(div, width, height) {
   this._GREYMINCHANCE = 30;
   this._BLUECHANCE = .06;
   this._WHITECHANCE = .01;
+  this._TRIANGLEHEIGHT = 42;
 
   this._div = div;
 
-  this._columns = Math.floor(width / 42);
-  this._rows = Math.ceil(height / 42);
+  this._columns = Math.floor(width / this._TRIANGLEHEIGHT);
+  this._rows = Math.ceil(height / this._TRIANGLEHEIGHT);
   for (var i = 0; i < this._columns; i += 1) {
     this._createColumn();
   }
@@ -96,6 +97,18 @@ $(document).ready(function(){
       triangles.hide();
     }
   }, function() {
+    if (triangles) {
+      triangles.show();
+    }
+  });
+
+  // Lightly mobile
+  document.getElementById('sidebar').addEventListener('touchstart', function(e) {
+    if (triangles) {
+      triangles.hide();
+    }
+  });
+  document.getElementById('sidebar').addEventListener('touchend', function(e) {
     if (triangles) {
       triangles.show();
     }
